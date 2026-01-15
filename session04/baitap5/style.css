@@ -1,0 +1,23 @@
+<style>
+        h1 {
+            color: rgb(184, 81, 13);
+        }
+
+        .first p {
+            color: blue;
+        }
+
+        .second p {
+            color: brown;
+        }
+
+        .box p {
+            color: rgb(6, 1, 12);
+            background-color: bisque;
+            border-left: 5px solid;
+        }
+
+        .box p b {
+            color: crimson;
+        }
+    </style>
