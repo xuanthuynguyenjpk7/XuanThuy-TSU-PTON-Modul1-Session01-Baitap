@@ -1,0 +1,36 @@
+.layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-area:
+        "Header Header"
+        "Sidebar Content"
+        "Footer Footer";
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header {
+    grid-area: Header;
+    background-color: rgb(69, 157, 235);
+    color: white;
+    padding: 10px;
+}
+.sidebar {
+    grid-area: Sidebar;
+    background-color: rgb(65, 172, 65);
+    color: white;
+    padding: 10px;
+}
+.content {
+    grid-area: Content;
+    background-color: rgb(236, 37, 37);
+    padding: 10px;
+}
+.footer {
+    grid-area: Footer;
+    background-color: rgb(218, 36, 218);
+    color: white;
+    padding: 10px;
+}
