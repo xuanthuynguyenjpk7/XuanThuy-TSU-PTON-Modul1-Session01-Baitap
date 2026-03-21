@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+}
+
+.box {
+  background-color: lightblue;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+/* Khối 3 full width */
+.full {
+  width: 100%;
+}
+
+/* 📱 Responsive cho điện thoại */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
