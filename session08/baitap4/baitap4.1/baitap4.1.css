@@ -1,0 +1,67 @@
+/* DÙNG GRID */
+
+/* ===== HEADER ===== */
+.header {
+  background: black;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr auto; /* logo trái - menu phải */
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+/* menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  display: grid;
+  place-items: center; /* thay cho flex center */
+
+  background: gray;
+  height: 500px;
+
+  font-size: 100px;
+  color: #cecece;
+}
+
+/* ===== INFORMATION ===== */
+.information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  gap: 10px;
+  padding: 10px;
+}
+
+/* item */
+.item {
+  background: #ebeaea;
+  height: 50px;
+  display: grid;
+  place-items: center; /* căn giữa cả 2 chiều */
+  border-radius: 4px;
+}
+
+/* item lớn */
+.item-large {
+  grid-column: span 2; /* chiếm 2 cột */
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* tablet + mobile */
+@media (max-width: 1024px) {
+  .information {
+    grid-template-columns: 1fr; /* 1 cột */
+  }
+
+  .item-large {
+    grid-column: span 1; /* tránh lỗi layout */
+  }
+}
